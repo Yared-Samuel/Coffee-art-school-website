@@ -1,113 +1,273 @@
+'use client'
+
+import { useState } from "react";
 import Image from "next/image";
-
+import { IoMdMenu } from "react-icons/io";
+import { CiInstagram, CiYoutube, CiFacebook  } from "react-icons/ci";
+import { PiBuilding, PiMailbox,  PiPhoneCall, PiTiktokLogoThin  } from "react-icons/pi";
+import { FaTelegram } from "react-icons/fa";
+import { SlBadge, SlLocationPin } from "react-icons/sl";
+import { CiCoffeeBean } from "react-icons/ci";
+import { TbCoffee } from "react-icons/tb";
+import { SiCoffeescript } from "react-icons/si";
+import Link from "next/link";
+import Scroll from "./components/Scroll";
+import SignUP from "./signUp/page";
 export default function Home() {
+  const [isOpen, setIsOpen] = useState(false)
+  const toggleMenu = ()=>{
+    setIsOpen(!isOpen)
+  };
+  const toggleNavbar = () => {
+    setClicked(!clicked)
+  }
+  console.log(isOpen)
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+    <Scroll />
+    <header>
+    
+    <Image className="logo" alt="logo" src="/images/LOGO.png" width={40} height={40} />
+    <div className="title-container">
+      <h1 className="title-main"><span>BZN<sup>M</sup> </span> School of Barista And Baking</h1>
+    </div>
+    <button className="navbar-icon" onClick={toggleMenu}><IoMdMenu size={40} color="white"/></button>
+    <nav>  
+ 
+  <ul className={isOpen ? "nav-link active" : "nav-link"}>
+    {/* <li>Events</li> */}
+    <li>Home</li>
+    <li>Contact Us</li>
+    <li>About Us</li>
+  </ul>
+  
+ </nav> 
+  </header>
+  
+
+ <section>
+   <Image className="hero-img image-common" src={'/images/persons/hero 4.png'} alt='Coffee art image' width={600} height={600} />
+   
+   <div className="hero-texts">
+   <h1 className="title-hero">Where <span className="hero-passion"> Passion</span> Meets <span className="hero-perfection">Perfection</span></h1>
+
+   
+   <div className="hero-text-desc">
+   Elevate your COFFEE journey at <span className="bznm">BZN <sup>M</sup></span>
         </div>
+    <Link href="/signUp" className="enroll-btn">ENROLL NOW</Link>
+
+  </div>
+ </section>
+
+
+    <div className="social-icons">
+      <Link href="#"><FaTelegram size={35} color="#1e3d2e"/></Link>
+      <Link href="#"><CiInstagram size={35} color="#1e3d2e"/></Link>
+      <Link href="#"><CiYoutube size={35} color="#1e3d2e"/></Link>
+      <Link href="#"><CiFacebook  size={35} color="#1e3d2e"/></Link>
+      <Link href="#"><PiTiktokLogoThin  size={35}color="#1e3d2e"/></Link>
+    </div>
+
+
+
+ <div className="services">
+  
+    <div className="cards card-1">
+      
+        
+      <Image className="card-img card-img-1 image-common" src={"/images/bzn.jpg"}  alt='Coffee art image' width={500} height={500} />
+      
+      <div className="card-text">
+    <SlBadge className="card-badge"  size={40} color="#754d1c"/>
+
+        <h3 className="card-title">One month class</h3>
+        <p>
+        Join our 1-month coffee barista training program, offering flexible 
+        3-shift schedules. Whether you are an early riser or prefer later hours, 
+        choose from morning (5:00-7:00), afternoon (8:00-10:00), or evening (10:00-12:00) sessions. 
+        Learn essential barista skills, perfect your craft, and start your coffee journey today!
+
+        </p>
+        <Link href="#" className="card-btn">Get Started</Link>
       </div>
+    </div>
+    <div className="cards card-2">
+      
+        
+      <div className="card-text">
+    <SlBadge className="card-badge"  size={40} color="#754d1c"/>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+        <h3 className="card-title">15-Day calss</h3>
+        <p>
+        Join our intensive 15-day barista training course, with classes 
+        held three times a week on Tuesday, Wednesday, and Saturday. The schedule is 
+        adaptable, allowing for adjustments based on course coverage to ensure 
+        you gain all the necessary skills. Perfect your coffee-making techniques and build a 
+        strong foundation for a successful barista career with us!
+
+        </p>
+        <Link href="#" className="card-btn">Get Started</Link>
       </div>
+      <Image className="card-img card-img-2 image-common" src={"/images/persons/group.png"} alt='Coffee art image' width={500} height={500} />
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+    </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+    <div className="cards card-3">
+      
+        
+      <Image className="card-img card-img-1 image-common" src={"/images/persons/hero 1.png"}  alt='Coffee art image' width={500} height={500} />
+      
+      <div className="card-text">
+    <SlBadge className="card-badge"  size={40} color="#754d1c"/>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+        <h3 className="card-title">Barista Training For Hotels</h3>
+        <p>
+        Barista Training for Hotels is a specialized program designed to 
+        equip hotel staff with expert coffee-making skills. Learn to craft 
+        perfect espressos, lattes, and cappuccinos to elevate guest experiences. 
+        Our comprehensive course covers everything from operating commercial 
+        machines to mastering latte art, ensuring your 
+        hotel serves exceptional coffee with every cup.
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        </p>
+        <Link href="#" className="card-btn">Get Started</Link>
       </div>
-    </main>
+    </div>
+      
+    
+    
+</div>
+
+
+{/* gallery */}
+<h4 className="gallery-title">Events & experiences</h4>
+<div className="gallery">
+	<Image src={"/images/persons/group 1.jpg"} width={500} height={500} alt="a forest after an apocalypse" />
+	<Image src={"/images/persons/group 2.jpg"} width={500} height={500} alt="a waterfall and many rocks" />
+	<Image src={"/images/persons/group 3.jpg"} width={500} height={500} alt="a house on a mountain" />
+	<Image src={"/images/persons/group 4.jpg"} width={500} height={500} alt="sime pink flowers" />
+	<Image src={"/images/persons/group.jpg"} width={500} height={500} alt="big rocks with some trees" />
+</div>
+<h5 className="gallery-text">You will have a chance to learn with real experiences.</h5>
+
+
+{/* WHY */}
+<h2 className="why">Why Choose BZNM?</h2>
+<div className="three-cards">
+  
+  <div className="one-of-three">
+    <CiCoffeeBean size={50} color="#754d1c"/>    
+    <p>At BZNM, we believe that great coffee starts with great baristas, 
+      and we are committed 
+      to fostering the next generation of coffee professionals.</p>
+  </div>
+  <div className="one-of-three">
+  <SiCoffeescript size={50} color="#754d1c"/>
+    <p>
+    What sets BZNM apart is that it offers a unique, one-of-a-kind class that 
+    is new to Ethiopia, making it an ideal starting point for anyone looking to 
+    begin their journey in the coffee industry. Whether you are aiming to start a 
+    career in coffee, open your own café, or deepen your appreciation for the perfect 
+    cup, BZNM School of Barista and Training is the perfect place to cultivate your 
+    passion and expertise. 
+    </p>
+  </div>
+  <div className="one-of-three">
+  <TbCoffee size={50} color="#754d1c"/>
+    <p>BZNM School of Barista and Training is a premier institution in 
+      Ethiopia dedicated to providing world-class barista education and 
+      coffee training. Our comprehensive curriculum equips aspiring baristas and 
+      coffee enthusiasts with the knowledge, skills, 
+      and confidence to excel in the dynamic world of specialty coffee. </p>
+  </div>
+</div>
+
+<div className="services-two">
+  <div className="services-two-text">
+  
+    <div className="services-two-title">About BZN</div>
+    <p>BZNM School of Barista and Training is a premier institution 
+      in Ethiopia dedicated to providing world-class barista education and coffee 
+      training. Our comprehensive curriculum equips aspiring baristas 
+      and coffee enthusiasts with the knowledge, 
+      skills, and confidence to excel in the dynamic world of specialty coffee. </p>
+  </div>
+  <Image className="long-img image-common" src={"/images/persons/group 2.jpg"} width={800} height={800} alt="Coffee art image" />
+</div>
+
+<SignUP />
+
+<div className="logo-bottom-container">
+  <div className="row-map">
+      <h3 className="bottom-title"> BZNM School of Barista and Training. </h3>
+  </div>
+<div className="map-section">
+  <ul className="address-map">
+    <li className="address-line"><SlLocationPin size={20} color="rgba(193,141,35,255)"/>&nbsp; &nbsp; Adiss Ababa, Ethiopia </li>
+    <li className="address-line"><PiBuilding size={20} color="rgba(193,141,35,255)"/>&nbsp; &nbsp; Megenagna Street, Capital building 11<sup>th</sup> floor</li>
+    <li className="address-line"><PiPhoneCall size={20} color="rgba(193,141,35,255)"/>&nbsp; &nbsp;  0911223344 </li>
+    <li className="address-line"><PiMailbox size={20} color="rgba(193,141,35,255)"/>&nbsp; &nbsp;  bznEthio@gmail.com </li>
+  </ul>
+  <div className="gmap-frame">
+    <iframe width="600" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+    src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Adiss%20ababa%20airport+(BZNM%20School)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+    <a href="https://www.gps.ie/">gps vehicle tracker</a></iframe>
+  </div>
+</div>
+<div className="row-map">
+      <h3 className="bottom-title"> BZNM School of Barista and Training. </h3>
+  </div>
+</div>
+
+
+  {/* Footer */}
+
+  <footer className="footer">
+  	 <div className="footer-container">
+  	 	<div className="row">
+  	 		<div className="footer-col">
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="#">about us</a></li>
+  	 				<li><a href="#">our services</a></li>
+  	 				<li><a href="#">privacy policy</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div className="footer-col">
+  	 			<h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="#">FAQ</a></li>
+  	 				<li><a href="#">Schedules</a></li>
+  	 				<li><a href="#">Payment</a></li>
+  	 				
+  	 			</ul>
+  	 		</div>
+  	 		<div className="footer-col">
+  	 			<h4>Location</h4>
+  	 			<ul>
+  	 				<li><a href="#">Addis Ababa Ethiopia</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div className="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div className="social-links">
+  	 				<a href="#"><FaTelegram size={35} color="#bbbbbb"/></a>
+  	 				<a href="#"><CiInstagram size={35} color="#bbbbbb"/></a>
+  	 				<a href="#"><CiYoutube size={35} color="#bbbbbb"/></a>
+  	 				<a href="#"><CiFacebook  size={35} color="#bbbbbb"/></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+     
+     <p id="copyright" className="copyright">
+                Copyright &copy; 2024 BZNM
+            </p>
+  </footer>
+
+
+
+ </>
   );
 }
