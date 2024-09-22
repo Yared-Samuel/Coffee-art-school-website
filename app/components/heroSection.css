@@ -1,0 +1,93 @@
+section {
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 1rem;
+    margin-inline: auto;  
+    /* background-image: url('/images/persons/art 3.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 40%;  */
+  
+  }
+  
+  .hero-img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 50%;
+    
+    /* animation: imageAnim 2s ease 0s 1 normal forwards;   */
+  }
+  
+  .hero-texts{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    
+    animation: textAnim 2s ease 0s 1 normal forwards;
+  
+  }
+  
+  .title-hero {
+    color: #31473A;
+    font-size: 4rem;
+    font-family: var(--font-teko);
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: start;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  
+  
+  }
+  
+  .hero-perfection {
+    color: rgba(193,141,35,255);
+    font-size: 7rem;
+    letter-spacing: 0.5rem;
+    
+  }
+  .hero-text-desc {
+    font-family: var(--font-lato);
+    color: #31473A;
+    font-size: 1.4rem;
+    width: 50%;
+    text-align: start;
+    /* animation: plusAnim 4s ease 0s 1 normal forwards; */
+    animation-iteration-count: infinite;
+  }
+  .hero-text-desc .bznm {
+    font-family: var(--font-lato);
+    margin: 0;
+    color: rgba(193,141,35,255);
+  
+  }
+  .hero-text-desc .bznm sup{
+    color: white;
+    background-color: #1e3d2e;
+    border-radius: 50%;
+  
+  }
+  
+  .enroll-btn {
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    background-color: rgba(193,141,35,255);
+    color: #1e3d2e;
+    padding: 7px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 2rem;
+    box-shadow: 0px 0px 10px 0px rgba(193,141,35,255);
+    font-family: var(--font-teko);
+  }
+  
+  .enroll-btn:hover {
+    background-color: rgba(193,141,35,255);
+    outline: 1.5px solid #1e3d2e;
+
+    color: white;
+    transition: 0.5s ease;
+  }

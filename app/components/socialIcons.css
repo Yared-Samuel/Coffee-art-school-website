@@ -1,0 +1,19 @@
+.social-icons {  
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-inline: auto;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    animation: iconInAnim 3s ease 0s 1 normal forwards;
+    
+  }
+  .social-icons > * {
+    cursor: pointer;  
+    margin-inline: 2rem;
+  
+  }
+  .social-icons > :hover {
+    color: rgba(193,141,35,255);
+    animation: iconAnim 1s ease 0s 1 normal forwards;
+  }
