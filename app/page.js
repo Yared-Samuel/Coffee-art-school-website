@@ -1,5 +1,5 @@
 import Scroll from "./components/Scroll";
-import SignUp from "./components/signUp";
+// import SignUp from "./components/signUp";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import CardOne from "./components/CardOne";
