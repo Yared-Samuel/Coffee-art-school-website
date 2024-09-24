@@ -1,6 +1,6 @@
 .three-cards {
-    background-image: url("/images/coffee/3.jpg");
-    max-width: 100%;
+    
+    max-width: 90%;
     display: flex;
     justify-content: space-between;
     gap: 2rem;
