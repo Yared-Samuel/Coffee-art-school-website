@@ -5,19 +5,12 @@ section {
     align-items: center;
     padding-inline: 1rem;
     margin-inline: auto;  
-    /* background-image: url('/images/persons/art 3.png');
-    background-repeat: no-repeat;
-    background-position:center;
-    background-size: 40%;  */
-  
   }
   
   .hero-img {
     max-width: 80%;
     max-height: 80%;
     border-radius: 50%;
-    
-    /* animation: imageAnim 2s ease 0s 1 normal forwards;   */
   }
   
   .hero-texts{
@@ -54,7 +47,6 @@ section {
     font-size: 1.4rem;
     width: 50%;
     text-align: start;
-    /* animation: plusAnim 4s ease 0s 1 normal forwards; */
     animation-iteration-count: infinite;
   }
   .hero-text-desc .bznm {

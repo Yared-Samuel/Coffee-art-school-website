@@ -22,7 +22,7 @@ const HeroSection = () => {
  
    </div>
    
-   <Image  className="hero-img image-common" src={'/images/persons/hero 4.png'} alt='Coffee art image' width={600} height={600} />
+   <Image  className="hero-img image-common" src={'/images/hero 4.png'} alt='Coffee art image' width={600} height={600} />
  
   </section>
   )

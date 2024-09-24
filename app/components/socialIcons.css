@@ -8,7 +8,7 @@
   margin-bottom: 5rem;
   padding: 3rem 0;
   background-color: #1e3d2e;
-  background-image: url('/images/persons/art 5.png');
+  background-image: url('/images/art 5.png');
 }
 .social-icons-2 {
   width: 100%;
@@ -20,7 +20,7 @@
   margin-bottom: 5rem;
   padding: 3rem 0;
   background-color: #1e3d2e;
-  background-image: url('/images/persons/art 5.png');
+  background-image: url('/images/art 5.png');
 
 }
 
@@ -30,7 +30,6 @@
 }
 .icon-one :hover {
   color: rgba(193, 141, 35, 255);
-  /* animation: iconAnim 1s ease 0s 1 normal forwards; */
 }
 .social-title {
   width: 100%;
