@@ -3,20 +3,7 @@ import React from "react";
 import "./gallery.css";
 import Parallax from "./Parallax";
 
-/*************  ✨ Codeium Command ⭐  *************/
-/**
- * A component that displays a gallery of images using the Parallax component.
- *
- * The gallery has a class of "gallery" and displays the following images:
- * - group 1.jpg
- * - group 2.jpg
- * - group 3.jpg
- * - group 4.jpg
- * - group.jpg
- *
- * @return {ReactElement} A React element representing the gallery.
- */
-/******  a2fb480a-654d-4536-bbac-0ec3a1aed081  *******/
+
 const Gallery = () => {
   return (
     <div>
