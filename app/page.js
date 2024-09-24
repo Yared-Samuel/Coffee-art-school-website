@@ -1,5 +1,5 @@
 import Scroll from "./components/Scroll";
-import SignUP from "./components/signUp";
+import SignUp from "./components/signUp";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import CardOne from "./components/CardOne";
@@ -25,10 +25,9 @@ export default function Home() {
 
       <SocialIcons />
 
-      {/* WHY */}
       <ThreeCards />
 
-      <SignUP />
+      <SignUp />
 
       <Gallery />
 
