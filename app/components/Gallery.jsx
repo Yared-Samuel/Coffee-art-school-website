@@ -1,12 +1,16 @@
 import Image from 'next/image'
 import React from 'react'
 import './gallery.css'
+import Parallax from './Parallax'
 
 const Gallery = () => {
   return (
     <div>
+      <Parallax speed={1} className={"self-baseline "}>
+      
       <div className="gallery">
-        <h4 className="gallery-text">Priceless Experiences makes your dream real</h4>
+
+        <h4 className="gallery-text">THE BEST WAY TO MAKE YOUR DREAMS COME TRUE IS TO JOIN NOW! </h4>
         <Image
           src={"/images/persons/group 1.jpg"}
           width={500}
@@ -38,7 +42,7 @@ const Gallery = () => {
           alt="big rocks with some trees"
         />
       </div>
-      
+      </Parallax>
     </div>
   )
 }

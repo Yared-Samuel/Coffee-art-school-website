@@ -17,8 +17,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={teko.variable + " " + lato.variable + " " + allura.variable}>
-        <SmoothScroll />
+        <SmoothScroll>
         {children}
+        </SmoothScroll>
+        
       </body>
     </html>
   );

@@ -1,0 +1,74 @@
+.fact-main {
+    display: flex;
+    justify-content: center;
+    background-image: url('/images/persons/art 3.png');
+    background-repeat: no-repeat;
+    background-position:top right;
+    background-size: 25%;
+
+
+}
+.fact-container {
+  max-width: 90%;
+  min-width: 90%;
+  align-self: center;
+  margin-bottom: 2rem;
+}
+.fact-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-family: var(--font-teko);
+  font-weight: 700;
+  font-size: 2rem;
+
+}
+
+.fact-card-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+.fact-card {
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 10px 0px #d9d9d93f;
+  border-radius: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  outline: 0.09px solid #1e3d2e;
+  align-items: center;
+  padding: 1rem;
+  flex: 0 1 25%;
+  -webkit-box-shadow: 0px 0px 131px -80px rgba(117,77,28,1);
+-moz-box-shadow: 0px 0px 131px -80px rgba(117,77,28,1);
+box-shadow: 0px 0px 131px -80px rgba(117,77,28,1);
+
+}
+.fact-number {
+  
+  color: #111827;
+  font-size: 2.5rem;
+  font-family: var(--font-teko);
+  font-weight: 700;
+  animation: fadeInBackward 2s ease 0s 1 normal forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.fact-number span {
+  color: rgba(193,141,35,255);
+  animation: fadeInBackward 2s ease 0s 1 normal forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 25%;
+}
+.fact-footer {
+    text-align: center;
+    color: #111827;
+    font-family: var(--font-teko);
+    font-size: 1.3rem;
+    text-wrap: wrap;
+}

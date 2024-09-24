@@ -34,10 +34,10 @@
     z-index: 999;
     text-transform: uppercase;
     color: rgba(193,141,35,255);
-    font-size: 3rem;
+    font-size: 2.95rem;
     background-color: rgba(173, 175, 175, 0.342);
     backdrop-filter: blur(10px);
-    width: 100%;
+    max-width: fit-content;
     display: flex;
     justify-content: center;
     align-self: end;

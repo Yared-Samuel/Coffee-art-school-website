@@ -1,19 +1,58 @@
-.social-icons {  
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    margin-inline: auto;
-    margin-top: 3rem;
-    margin-bottom: 5rem;
-    animation: iconInAnim 3s ease 0s 1 normal forwards;
-    
-  }
-  .social-icons > * {
-    cursor: pointer;  
-    margin-inline: 2rem;
+.social-icons-1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: auto;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  padding: 3rem 0;
+  background-color: #1e3d2e;
+  background-image: url('/images/persons/art 5.png');
+}
+.social-icons-2 {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  margin-inline: auto;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  padding: 3rem 0;
+  background-color: #1e3d2e;
+  background-image: url('/images/persons/art 5.png');
+
+}
+
+.icon-one {
+  cursor: pointer;
+  margin-inline: 2rem;
+}
+.icon-one :hover {
+  color: rgba(193, 141, 35, 255);
+  /* animation: iconAnim 1s ease 0s 1 normal forwards; */
+}
+.social-title {
+  width: 100%;
+  font-family: var(--font-teko);
+  font-size: 5rem;
+  color: #1e3d2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+}
+.social-title span {
+  color: rgba(193, 141, 35, 255);
+}
+.social-desc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  font-family: var(--font-teko);
+  font-size: 2rem;
+  margin-inline: auto;
+  text-align: center;
   
-  }
-  .social-icons > :hover {
-    color: rgba(193,141,35,255);
-    animation: iconAnim 1s ease 0s 1 normal forwards;
-  }
+}

@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
 import './heroSection.css'
@@ -20,6 +21,7 @@ const HeroSection = () => {
      <Link onClick={handleClick} href="#" className="enroll-btn">ENROLL NOW</Link>
  
    </div>
+   
    <Image  className="hero-img image-common" src={'/images/persons/hero 4.png'} alt='Coffee art image' width={600} height={600} />
  
   </section>

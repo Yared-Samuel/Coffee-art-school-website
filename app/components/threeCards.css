@@ -22,9 +22,9 @@
     font-size: 3rem;
     color: #1e3d2e;
     text-shadow: 5px 0px 0px rgba(117,77,28,0.26);
-    animation: appearAnim linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation: fadeInBackward 2s ease 0s 1 normal forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
   }
   .one-of-three {  
     flex: 0 1 33%;
@@ -45,13 +45,14 @@
   }
   
   .one-of-three p {
-    font-family: var(--font-lato);
-    font-size: 1.1rem;
-    color: rgb(124, 121, 121);
+    font-family: var(--font-teko);
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #111827;
     text-align: justify;
-    animation: appearAnim linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation: fadeInBackward 2s ease 0s 1 normal forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
   
   }
   
