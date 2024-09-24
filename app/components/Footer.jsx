@@ -1,13 +1,20 @@
-import React from 'react'
-import { CiFacebook, CiInstagram, CiYoutube } from 'react-icons/ci'
-import { FaTelegram } from 'react-icons/fa'
-import './footer.css'
-import Parallax from './Parallax'
+import React from "react";
+import { CiFacebook, CiInstagram, CiYoutube } from "react-icons/ci";
+import { FaTelegram } from "react-icons/fa";
+import "./footer.css";
+import Parallax from "./Parallax";
 
+/*************  ✨ Codeium Command ⭐  *************/
+/**
+ * Footer component that renders the footer of the website.
+ *
+ * @returns {JSX.Element} The JSX element for the footer.
+ */
+/******  635f4318-fb3c-40b3-baf5-e28737895c29  *******/
 const Footer = () => {
   return (
     <Parallax speed={4} className={"self-end"}>
-    <footer className="footer">
+      <footer className="footer">
         <div className="footer-container">
           <div className="row">
             <div className="footer-col">
@@ -69,10 +76,9 @@ const Footer = () => {
         <p id="copyright" className="copyright">
           Copyright &copy; 2024 BZNM
         </p>
-      </footer> 
-      </Parallax>
+      </footer>
+    </Parallax>
+  );
+};
 
-  )
-}
-
-export default Footer
+export default Footer;

@@ -81,11 +81,3 @@ ul{
   font-size: 1.5rem;
   margin-top: 1rem;
 }
-/* other staffs */
-.image-common{
-  /* transition:imageZoom 1s ease; */
-}
-.image-common:hover{
-  /* animation: imageZoom 2s ease 0s 1 normal forwards; */
-  
-}

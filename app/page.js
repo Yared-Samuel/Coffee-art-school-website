@@ -1,6 +1,3 @@
-
-import { CiInstagram, CiYoutube, CiFacebook } from "react-icons/ci";
-import { FaTelegram } from "react-icons/fa";
 import Scroll from "./components/Scroll";
 import SignUP from "./components/signUp";
 import Header from "./components/Header";
@@ -21,32 +18,23 @@ export default function Home() {
       <Header />
       <HeroSection />
       <Parallax speed={-3} className={"self-end"}>
-      <Fact />
-
+        <Fact />
       </Parallax>
 
       <CardOne />
-      
+
       <SocialIcons />
 
       {/* WHY */}
       <ThreeCards />
 
-      
-
       <SignUP />
 
-      <Gallery />      
-
+      <Gallery />
 
       <Address />
 
-      
-
-      {/* Footer */}
       <Footer />
-
-       
     </>
   );
 }
