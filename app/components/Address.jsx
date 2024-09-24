@@ -6,16 +6,7 @@ import locationSvg from "../../public/images/location.svg";
 import Image from "next/image";
 import Parallax from "./Parallax";
 
-/*************  ✨ Codeium Command ⭐  *************/
-/**
- * Address
- *
- * This component displays the address of BZN School, and an embedded
- * Google Map pointing to the location.
- *
- * @return {JSX.Element} The JSX Element
- */
-/******  e46dd17c-dbb7-4fee-9f43-4d0895996512  *******/
+
 const Address = () => {
   return (
     <div className="logo-bottom-container">

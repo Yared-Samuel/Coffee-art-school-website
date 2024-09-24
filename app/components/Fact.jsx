@@ -3,14 +3,7 @@ import { GiChart } from "react-icons/gi";
 import { VscCoffee } from "react-icons/vsc";
 import { TbBrandCashapp } from "react-icons/tb";
 import "./fact.css";
-/*************  ✨ Codeium Command ⭐  *************/
-/**
- * Fact component renders a section that displays three cards with facts about coffee.
- * The facts are related to the economy, the salary of a barista, and the number of cups of coffee consumed daily in Ethiopia.
- *
- * @return {JSX.Element} The Fact component.
- */
-/******  ece0cfa5-8fc8-46d3-b122-f12a90b2540c  *******/
+
 const Fact = () => {
   return (
     <div className="fact-main">

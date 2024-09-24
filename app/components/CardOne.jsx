@@ -4,14 +4,7 @@ import React from "react";
 import "./cardOne.css";
 import Parallax from "./Parallax";
 
-/*************  ✨ Codeium Command ⭐  *************/
-/**
- * A Card component that renders a set of three cards with different information
- * about barista training courses, each with a different animation effect.
- *
- * @returns A JSX element representing the Card component.
- */
-/******  613194f7-a4e4-43aa-a446-ccbe07a7bd42  *******/
+
 const CardOne = () => {
   return (
     <div className="card-one-caontainer">
