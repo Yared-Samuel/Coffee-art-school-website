@@ -13,31 +13,31 @@ const Gallery = () => {
             THE BEST WAY TO MAKE YOUR DREAMS COME TRUE IS TO JOIN NOW!{" "}
           </h4>
           <Image
-            src={"/images/persons/group 1.jpg"}
+            src={"/images/group 1.jpg"}
             width={500}
             height={500}
             alt="a forest after an apocalypse"
           />
           <Image
-            src={"/images/persons/group 2.jpg"}
+            src={"/images/group 2.jpg"}
             width={500}
             height={500}
             alt="a waterfall and many rocks"
           />
           <Image
-            src={"/images/persons/group 3.jpg"}
+            src={"/images/group 3.jpg"}
             width={500}
             height={500}
             alt="a house on a mountain"
           />
           <Image
-            src={"/images/persons/group 4.jpg"}
+            src={"/images/group 4.jpg"}
             width={500}
             height={500}
             alt="sime pink flowers"
           />
           <Image
-            src={"/images/persons/group.jpg"}
+            src={"/images/group.jpg"}
             width={500}
             height={500}
             alt="big rocks with some trees"
