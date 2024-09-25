@@ -12,7 +12,7 @@ const HeroSection = () => {
     <section>
    
     <div className="hero-texts">
-    <h1 className="title-hero">Where <span className="hero-passion"> Passion</span> Meets <span className="hero-perfection">Perfection</span></h1>
+    <h1 className="title-hero">Where Passion Meets <span className="hero-perfection">Perfection</span></h1>
  
     
     <div className="hero-text-desc">

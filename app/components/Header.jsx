@@ -10,8 +10,8 @@ const Header = () => {
     <div className="title-container">
       <h1 className="title-main"><span>BZN <sup>M</sup></span> School of Barista And Baking</h1>
     </div>
-    <button className="navbar-icon" ><IoMdMenu size={40} color="white"/></button>
-    <nav>  
+    {/* <button className="navbar-icon" ><IoMdMenu size={40} color="white"/></button> */}
+    <nav className='nav-lists'>  
  
   <ul>
     <li>Home</li>

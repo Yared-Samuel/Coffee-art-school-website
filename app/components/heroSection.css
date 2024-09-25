@@ -17,8 +17,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: center;
-    
+    justify-content: center;    
     animation: textAnim 2s ease 0s 1 normal forwards;
   
   }
@@ -83,3 +82,56 @@ section {
     color: white;
     transition: 0.5s ease;
   }
+
+
+  /* RESPONSIVE MEDIA QUERIES */
+
+  /* Large phones (portrait and landscape) */
+@media (max-width: 600px) {
+  section {
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 10rem;
+  }
+
+
+  .title-hero {
+    font-size: 1.7rem;
+    line-height: 1;
+    text-align: start;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  
+  
+  }
+  .hero-perfection {
+    color: rgba(193,141,35,255);
+    font-size: 3rem;
+    letter-spacing: 0.17rem;
+    
+  }
+  .hero-text-desc {
+    font-size: 0.7rem;
+    width: 50%;
+  }
+
+  .hero-img {
+    max-width: 50%;
+    max-height: 30%;
+    border-radius: 10%;
+    position: absolute;
+    top: 3rem;
+    right: 0rem;
+    z-index: -1;
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 1.0) 40%, transparent 100%);
+  }
+
+  .enroll-btn{
+    margin-top: 7rem;
+    width: 80%;
+    align-self: center;
+    text-align: center;
+  }
+  
+}
+
+/* Large tablets and small desktops */
