@@ -19,7 +19,8 @@ html.lenis body {
   pointer-events: none;
 }
 body {
-  background-color: #f0f8ff;
+  background-color: white;
+  /* background-color: #f0f8ff; */
   /* background-image: url('/images/persons/art 5.png');
   background-repeat: no-repeat;
   background-position:top left;
@@ -33,11 +34,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  overflow-x: hidden;
 }
 h1, h2, h3, h4, h5, h6, ul, li,span, sup,Image {
   margin: 0;
   padding: 0;
+}
+
+.black-screen {
+	background-color: #754d1c;
+  max-width: 100%;
+  min-height: 100vh;
 }
 
 
