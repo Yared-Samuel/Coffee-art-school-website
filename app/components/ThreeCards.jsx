@@ -9,7 +9,9 @@ import Parallax from "./Parallax";
 const ThreeCards = () => {
   return (
     <div className="three-cards-container">
+      <Parallax scale={[1, 0]}>
       <h2 className="why">Why BZNM?</h2>
+      </Parallax>
       <div className="three-cards">
         <div className="one-of-three">
           <div className="three-card-images-container">
@@ -19,18 +21,29 @@ const ThreeCards = () => {
               className="three-card-image three-card-1"
               src={"/images/bean1.jpg"}
               alt="Coffee art image"
-              width={400}
-              height={300}
+              width={300}
+              height={200}
             />
             </Parallax>
-      <Parallax speed={4} className={"baseline"}>
+      <Parallax speed={-2} className={"self-end"}>
 
             <Image
               className="three-card-image three-card-2"
               src={"/images/bean6.jpg"}
               alt="Coffee art image"
-              width={300}
-            height={400}
+              width={200}
+            height={300}
+              
+            />
+            </Parallax>
+      <Parallax speed={1} className={"self-end"}>
+
+            <Image
+              className="three-card-image three-card-2"
+              src={"/images/bean6.jpg"}
+              alt="Coffee art image"
+              width={200}
+            height={300}
               
             />
             </Parallax>
@@ -49,13 +62,33 @@ const ThreeCards = () => {
         </div>
         <div className="one-of-three">
         <div className="three-card-images-container">
-        <Parallax speed={-1} className={"self-start"} scale={[1, 1.2]}>
+        <Parallax speed={-1} className={"self-start"}>
           <Image
             className="three-card-image three-card-3"
             src={"/images/bean3.jpg"}
             alt="Coffee art image"
-            width={300}
-            height={400}
+            width={200}
+            height={300}
+          />
+          </Parallax>
+        <Parallax speed={2} className={"self-start"}>
+
+          <Image
+            className="three-card-image three-card-3"
+            src={"/images/bean3.jpg"}
+            alt="Coffee art image"
+            width={200}
+            height={300}
+          />
+          </Parallax>
+        <Parallax speed={1} className={"self-start"}>
+
+          <Image
+            className="three-card-image three-card-3"
+            src={"/images/bean3.jpg"}
+            alt="Coffee art image"
+            width={200}
+            height={300}
           />
           </Parallax>
           </div>

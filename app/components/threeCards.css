@@ -36,6 +36,7 @@
   font-family: var(--font-teko);
   text-align:end;
   z-index: 10;
+
 }
 .card-span{
   color: #1e3d2e;
@@ -44,11 +45,12 @@
 
 .three-card-images-container{
   position: absolute;
-  left: 40%;
-  max-width: 100%;
+  left: 35%;
   display: flex;
   justify-content: space-around;
   gap: 3rem;
+  flex:1 0 auto;
+
 }
 
 .three-card-image {
@@ -56,7 +58,8 @@
   max-height: 100%;
   border-radius: 2rem;
   transition: 1s ease;
-  z-index: 10;
+  filter: drop-shadow(2px 5px 25px #1e3d2e);
+
 
 }
 

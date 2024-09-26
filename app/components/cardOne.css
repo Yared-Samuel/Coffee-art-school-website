@@ -9,6 +9,7 @@
   justify-content: space-between;
 }
 .card-one-title-down{
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,6 +37,7 @@
    -webkit-text-fill-color: transparent;
    animation: textclip 5s linear infinite;
    display: inline-block;
+   
 }
 .card-one-title-fix{
   position: absolute;
@@ -65,6 +67,8 @@
 .card-img {
   flex: 0 1 48%;
   border-radius: 2rem;
+  position: relative;
+   z-index: 1;
 }
 
 .card-text {
