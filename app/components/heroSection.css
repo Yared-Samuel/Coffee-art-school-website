@@ -1,16 +1,27 @@
-section {
+ section {
+  /*
+  background-image: url('/images/main.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  */
+  padding-top: 2rem;
+} 
+.hero-container {
     max-width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-inline: 1rem;
-    margin-inline: auto;  
+    margin-inline: auto;
   }
   
   .hero-img {
     max-width: 80%;
     max-height: 80%;
     border-radius: 50%;
+    display: hidden;
   }
   
   .hero-texts{
@@ -19,6 +30,7 @@ section {
     align-items: start;
     justify-content: center;    
     animation: textAnim 2s ease 0s 1 normal forwards;
+
   
   }
   

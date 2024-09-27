@@ -9,12 +9,14 @@ import Parallax from "./Parallax";
 
 const Address = () => {
   return (
+    <div className="address-container-image">
     <div className="logo-bottom-container">
       <Parallax speed={-1} className={"self-baseline"}>
       <Image className="location-icon" priority src={locationSvg} alt="location-Icon" width={80} height={80} />
       </Parallax>
       <div className="map-section">
-      <Parallax speed={-3} className={"self-end"}>
+
+      {/* <Parallax speed={-3} className={"self-end"}> */}
 
         <ul className="address-map">
           <li className="address-line">
@@ -41,13 +43,14 @@ const Address = () => {
             &nbsp; &nbsp; bznEthio@gmail.com{" "}
           </li>
         </ul>
-        </Parallax>
-      <Parallax speed={2} className={"self-end"}>
+        {/* </Parallax> */}
+      <Parallax speed={-1} className={"self-end"}>
 
         <div className="gmap-frame">
           <iframe
+          className="gmap"
             width="500"
-            height="300"
+            height="400"
             frameBorder="0"
             scrolling="no"
             marginHeight="0"
@@ -59,6 +62,7 @@ const Address = () => {
         </div>
         </Parallax>
       </div>
+    </div>
     </div>
   );
 };

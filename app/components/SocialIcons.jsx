@@ -50,7 +50,7 @@ const SocialIcons = () => {
         </div>
         <Parallax speed={-2} className={"self-end"}>
 
-        <div class="content">
+        <div className="content">
     <h2>BEST IN NATION!</h2>
     <h2>BEST IN NATION!</h2>
   </div>

@@ -10,6 +10,7 @@ const HeroSection = () => {
   }
   return (
     <section>
+      <div className="hero-container">
    
     <div className="hero-texts">
     <h1 className="title-hero">Where Passion Meets <span className="hero-perfection">Perfection</span></h1>
@@ -22,8 +23,9 @@ const HeroSection = () => {
  
    </div>
    
-   <Image  className="hero-img image-common" src={'/images/hero 4.png'} alt='Coffee art image' width={600} height={600} />
- 
+   <Image  className="hero-img image-common" src={'/images/hero 4.png'} alt='Coffee art image' width={500} height={500} />
+   </div>
+
   </section>
   )
 }

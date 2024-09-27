@@ -49,7 +49,7 @@ const ThreeCards = () => {
             </Parallax>
           </div>
 
-          <CiCoffeeBean size={70} color="#1e3d2e" />
+          <CiCoffeeBean className="three-card-icon" size={70} color="#1e3d2e" />
           <p>
             At BZNM, we believe that{" "}
             <span className="card-span">
@@ -92,7 +92,7 @@ const ThreeCards = () => {
           />
           </Parallax>
           </div>
-          <MdOutlineCoffeeMaker size={70} color="#1e3d2e" />
+          <MdOutlineCoffeeMaker className="three-card-icon" size={70} color="#1e3d2e" />
           <p>
             What sets BZNM apart is that it offers a{" "}
             <span className="card-span">unique and one-of-a-kind class </span>
@@ -128,7 +128,7 @@ const ThreeCards = () => {
           </Parallax>
 
           </div>
-          <TbCoffee size={70} color="#1e3d2e" />
+          <TbCoffee className="three-card-icon" size={70} color="#1e3d2e" />
           <p>
             BZNM School of Barista and Training is a{" "}
             <span className="card-span"> premier institution in Ethiopia </span>{" "}
