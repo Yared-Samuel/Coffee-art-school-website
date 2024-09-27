@@ -31,7 +31,7 @@ const Gallery = () => {
             alt="a house on a mountain"
           />
           <Image
-            src={"/images/group 4.jpg"}
+            src={"/images/group4.jpg"}
             width={500}
             height={500}
             alt="sime pink flowers"

@@ -24,6 +24,12 @@ const Parallax = ({ className, children, speed = 1, id = "parallax" }) => {
         scrub: true,
         start: "top bottom",
         end: "bottom top",
+/*************  ✨ Codeium Command ⭐  *************/
+        // ScrollTrigger's onUpdate callback, gets called every time the scroll position is updated
+        // and the ScrollTrigger is active. The callback is passed an object with a `progress`
+        // property which is a normalized value between 0 and 1 indicating the progress of the
+        // scrollTrigger. Here we use this progress to set the y position of the element.
+/******  400e3dde-ef5d-4407-9bc7-6a9817776178  *******/
         onUpdate: (e)=>{
             setY(e.progress * y);
         }
