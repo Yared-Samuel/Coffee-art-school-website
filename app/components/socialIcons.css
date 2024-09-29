@@ -1,5 +1,5 @@
 .social-icon-container {
-  background-image: url('/images/coffee-pattern.png');
+  background-image: url("/images/coffee-pattern.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top right;
@@ -32,14 +32,12 @@
   /* background-color: #1e3d2e; */
   /* background-image: url('/images/coffee-pattern.png');
   background-size: 30%; */
-
 }
 
 .icon-one {
   cursor: pointer;
   margin-inline: 2rem;
   filter: drop-shadow(2px 10px 25px #1e3d2e);
-
 }
 .icon-one :hover {
   color: rgba(193, 141, 35, 255);
@@ -57,7 +55,7 @@
 .social-title span {
   color: rgba(193, 141, 35, 255);
 }
-.social-desc{
+.social-desc {
   padding: 2rem;
   display: flex;
   justify-content: center;
@@ -69,20 +67,13 @@
   text-align: center;
   font-weight: 500;
 
-
-
-  
-  background: rgba( 255, 255, 255, 0.25 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 4px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-  
-  
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
-
-
 
 .content {
   position: relative;
@@ -134,4 +125,28 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
       0% 100%
     );
   }
+}
+
+
+
+@media (max-width: 600px) {
+
+.social-icon-container {
+  background-size: contain;
+  background-repeat: repeat-y;
+}
+.social-title {
+  font-size: 3rem;
+}
+.social-desc {
+  font-size: 1rem;
+  width: 90%;
+
+}
+.content h2 {
+  font-size: 3rem;
+  transform: translate(2%, -50%);
+
+}
+
 }

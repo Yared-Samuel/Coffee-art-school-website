@@ -77,3 +77,30 @@
 
 
 }
+
+@media (max-width: 600px) {
+
+  .three-cards {
+    gap: 0.5rem;
+  }
+  .why {
+  margin-bottom: 0.5rem;
+  padding: 0rem;
+
+  }
+  
+  .one-of-three {
+    flex-direction: column;
+    max-width: 90%;
+
+  }
+  .three-card-images-container {
+    position: static;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .three-card-image{
+    display: none;
+  }
+
+}

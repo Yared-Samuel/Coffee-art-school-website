@@ -103,7 +103,11 @@
   section {
     flex-direction: column;
     justify-content: start;
-    margin-top: 10rem;
+    
+  }
+  .hero-container {
+    position: relative;
+
   }
 
 
@@ -127,20 +131,20 @@
   }
 
   .hero-img {
-    max-width: 50%;
-    max-height: 30%;
+    max-width: 100%;
+    max-height: 100%;
     border-radius: 10%;
     position: absolute;
-    top: 3rem;
-    right: 0rem;
+    top:40%;
+    left: 5%;
     z-index: -1;
     mask-image: linear-gradient(to left, rgba(0, 0, 0, 1.0) 40%, transparent 100%);
   }
 
   .enroll-btn{
-    margin-top: 7rem;
-    width: 80%;
-    align-self: center;
+    margin-top: 10rem;
+    width: 70%;
+    align-self: start;
     text-align: center;
   }
   

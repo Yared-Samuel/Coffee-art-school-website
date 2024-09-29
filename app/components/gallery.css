@@ -43,3 +43,18 @@
     align-self: end;
 
   }
+
+@media (max-width: 600px) {
+  .gallery {
+    margin-bottom: 5rem;
+  }
+  .gallery-text {
+    display: none;
+  }
+  .location-icon{
+    animation: none;
+  }
+  .gmap-frame {
+    width: 90%;
+  }
+}
