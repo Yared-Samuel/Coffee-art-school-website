@@ -23,7 +23,7 @@ const HeroSection = () => {
  
    </div>
    
-   <Image  className="hero-img image-common" src={'/images/hero 4.png'} alt='Coffee art image' width={500} height={500} />
+   <Image  className="hero-img image-common" src={'/images/hero 4.webp'} alt='Coffee art image' width={500} height={500} />
    </div>
 
   </section>

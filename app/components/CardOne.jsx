@@ -49,6 +49,13 @@ const CardOne = () => {
         </div>
         <Parallax speed={1} className={"self-start "}>
           <div className="cards card-2">
+          <Image
+              className="card-img card-img-2 image-common"
+              src={"/images/group.png"}
+              alt="Coffee art image"
+              width={500}
+              height={500}
+            />
             <div className="card-text">
               <h3 className="card-title">15-Day calss</h3>
               <p>
@@ -64,13 +71,7 @@ const CardOne = () => {
               </Link>
             </div>
 
-            <Image
-              className="card-img card-img-2 image-common"
-              src={"/images/persons/group.png"}
-              alt="Coffee art image"
-              width={500}
-              height={500}
-            />
+            
           </div>
         </Parallax>
         <div className="card-one-title-container">
@@ -83,7 +84,7 @@ const CardOne = () => {
           <div className="cards card-3">
             <Image
               className="card-img card-img-1 image-common"
-              src={"/images/persons/hero 1.png"}
+              src={"/images/hero 1.webp"}
               alt="Coffee art image"
               width={500}
               height={500}
