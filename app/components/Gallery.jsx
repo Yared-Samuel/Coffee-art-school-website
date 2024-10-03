@@ -9,9 +9,7 @@ const Gallery = () => {
     <div>
       <Parallax speed={1} className={"self-baseline "}>
         <div className="gallery">
-          <h4 className="gallery-text">
-            THE BEST WAY TO MAKE YOUR DREAMS COME TRUE IS TO JOIN NOW!{" "}
-          </h4>
+          
           <Image
             src={"/images/group1.webp"}
             width={500}
