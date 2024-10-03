@@ -19,7 +19,7 @@ const CardOne = () => {
           <div className="cards card-1">
             <Image
               className="card-img card-img-1 image-common"
-              src={"/images/bzn.jpg"}
+              src={"/images/bzn.webp"}
               alt="Coffee art image"
               width={500}
               height={500}
@@ -51,7 +51,7 @@ const CardOne = () => {
           <div className="cards card-2">
           <Image
               className="card-img card-img-2 image-common"
-              src={"/images/group.png"}
+              src={"/images/group.webp"}
               alt="Coffee art image"
               width={500}
               height={500}
