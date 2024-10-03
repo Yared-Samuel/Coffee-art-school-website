@@ -7,7 +7,7 @@ import Parallax from "./Parallax";
 
 const Footer = () => {
   return (
-    <Parallax speed={4} className={"self-end"}>
+    <Parallax speed={-2} className={"self-end"}>
       <footer className="footer">
         <div className="footer-container">
           <div className="row">
